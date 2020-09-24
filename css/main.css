@@ -12,6 +12,8 @@ body {
 }
 
 .container {
+	max-width: 1200px;
+	width: 90%;
 	margin: 0 auto;
 	display: flex;
 	justify-content: center;
@@ -53,12 +55,15 @@ header {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	width: 100%;
 }
 
 header h1 {
 	margin: 0;
 	padding: 38px 0 15px 0;
-	border-bottom: 3px solid #77a466
+	border-bottom: 3px solid #77a466;
+	width: 100%;
+	text-align: center;
 }
 header h1 span {
 	color: #77a466;
@@ -66,8 +71,10 @@ header h1 span {
 
 header nav {
 	display: flex;
+	justify-content: center;
 	padding: 26px 0;
 	text-align: center;
+	width: 100%;
 }
 header nav ul {
 	margin: 0;
@@ -135,10 +142,10 @@ header nav ul li a{
 .section-one,
 .section-two,
 .section-three {
-	width: 80%;
+	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
-  padding: 10px 0;
+  
 }
 
 .section-one {
@@ -181,6 +188,7 @@ footer {
 	justify-content: center;
 	align-items: center;
 	flex-flow: row;
+	width: 100%;
 }
 footer span {
 	font-family: 'Galada', cursive;
