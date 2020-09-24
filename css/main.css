@@ -190,31 +190,37 @@ footer span {
 }
 
 /* TABLET STYLES */
-@media (min-width: 786px) {
+@media all and (min-width: 768px) {
 
-	header {
-		margin: 0 auto;
+	.bottom-section {
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-flow: row wrap;
-		flex-direction: column;
-	}
-	header h1 {
-		padding: 38px 0 15px 0;
-		width: 100%;
-		border-bottom: 3px solid #77a466;
-	}
-
-	.bottom-section {
-		display: flex;
-		flex-flow: row wrap;
 		margin: 0 auto;
 	}
 
+	.section-one {
+		display: flex;
+		flex-flow: column;
+		padding: 10px 20px;
+	}
+
 	.section-two {
+		display: flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-flow: column;
 		border-right: 1px solid #eee;
 		border-left: 1px solid #eee;
+	}
+
+	.section-three {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-flow: column;
+
 	}
 
 	.section-one,
@@ -226,39 +232,15 @@ footer span {
 	  padding: 10px 0;
 	}
 
-	.section-one h4 {
-		padding: 10px 0;
-	}
-
 	.section-two h4,
 	.section-three h4 {
 		padding: 10px 30px;
-	}
-
-	.menu {
-		list-style: none;
-		padding: 0;
-	}
-	.menu li {
-		padding: 10px 0;
-		color:#77a466;
-	}
-
-	.reviews {
-		color: #333;
-		font-size: 1em;
-		line-height: 21px;
-	}
-
-	.address {
-		font-size: 1em;
-		line-height: 24px;
 	}
 }
 
 /*** DESKTOP STYLES ***/
 
-@media (min-width: 1200px) {
+@media all and (min-width: 1200px) {
 	body {
 		font-family: 'Montserrat', Helvetica, Arial, sans-serif;
 		display: flex;
@@ -276,54 +258,9 @@ footer span {
 		flex-flow: row wrap;
 	}
 
-	h1,
-	h2,
-	h3,
-	h4 {
-		color: black;
-		text-transform: uppercase;
-		font-weight: 700;
-	}
-	h1 {
-		font-size: 30px;
-	}
-	h2 {
-	    font-size: 24px;
-	}
-	h3 {
-		font-size: 18px;
-	}
-	h4 {
-		font-size: 12px;
-	}
-
-	p {
-		font-size: 14px;
-		line-height: 21px;
-	    padding: 0 30px;
-	}
-
-	/*The widths are in a percentage!*/
-	header {
-		height: 110px;
-		border-bottom: 3px solid #77a466;
-		margin: 0 auto;
-	}
-
-	header h1 {
-		float: left;
-		margin: 0;
-		padding: 38px 0;
-	}
-	header h1 span {
-		color: #77a466;
-	}
-
-	header nav {
-		float: right;
-		padding: 46px 0;
-	}
 	header nav ul {
+		display: flex;
+		justify-content: space-between;
 		margin: 0;
 		padding: 0;
 	}
@@ -340,10 +277,17 @@ footer span {
 	}
 
 	/*The widths are in a percentage!*/
-	.top-section,
-	.bottom-section {
+	.top-section {
 		margin: 0 auto;
-		clear: both;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.bottom-section {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
 	}
 
 	.main-image {
@@ -427,5 +371,4 @@ footer span {
 		color: #77a466;
 		font-size: 14px;
 	}
-
 }
