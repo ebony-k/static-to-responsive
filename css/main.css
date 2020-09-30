@@ -40,6 +40,7 @@ h3 {
 }
 h4 {
 	font-size: 1.3333em;
+
 }
 
 p {
@@ -145,7 +146,7 @@ header nav ul li a{
 	width: 100%;
 	height: auto;
 	border-top: 1px solid #eee;
-  
+
 }
 
 .section-one {
@@ -203,24 +204,27 @@ footer span {
 	.bottom-section {
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		flex-flow: row wrap;
 		margin: 0 auto;
+		width: 100%;
 	}
 
 	.section-one {
 		display: flex;
 		flex-flow: column;
 		padding: 10px 20px;
+		width: 33%;
 	}
 
 	.section-two {
 		display: flex;
-		justify-content: flex-start;
-		align-items: flex-start;
+		justify-content: center;
+		align-items: center;
 		flex-flow: column;
 		border-right: 1px solid #eee;
 		border-left: 1px solid #eee;
+		width: 33%;
 	}
 
 	.section-three {
@@ -228,14 +232,12 @@ footer span {
 		justify-content: center;
 		align-items: center;
 		flex-flow: column;
-
+		width: 33%;
 	}
 
 	.section-one,
 	.section-two,
 	.section-three {
-		width: 80%;
-		height: auto;
 		border-top: 1px solid #eee;
 	  padding: 10px 0;
 	}
@@ -294,13 +296,15 @@ footer span {
 
 	.bottom-section {
 		display: flex;
-		align-items: center;
+		align-items: flex-start;
 		justify-content: space-between;
+		flex-flow: row wrap;
+		margin: 0 auto;
+		width: 100%;
 	}
 
 	.main-image {
 		height: auto;
-		float: left;
 	}
 	.main-image img {
 		width: 100%;
@@ -326,8 +330,6 @@ footer span {
 	.section-two,
 	.section-three {
 		width: 33%;
-		height: auto;
-		float: left;
 		border-top: 1px solid #eee;
 	}
 
@@ -370,7 +372,6 @@ footer span {
 		height: 50px;
 		border-top: 3px solid #eee;
 		margin: 0 auto;
-		clear: both;
 		text-align: center;
 	}
 	footer span {
